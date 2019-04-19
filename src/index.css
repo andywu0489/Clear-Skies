@@ -14,7 +14,7 @@ code {
 }
 
 #root {
-  background-color: black;
+  background-color: rgb(96, 153, 190);
   width: 100vw;
   height: 100vh;
   display: flex;

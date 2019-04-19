@@ -87,15 +87,16 @@ class App extends React.Component {
 
         <Container id='container'>
           <Row id='row1'>
-            <Nav />
+
           </Row>
           <Row id='row2'>
             <Col id='col1'>
+              <Nav />
               <Description />
-            </Col>
-            <Col id='col2'>
               <Form getWeather={this.getWeather}/>
               <Units unitChange={this.unitChange} />
+            </Col>
+            <Col id='col2'>
               <Weather
                 temperature={this.state.temperature}
                 city={this.state.city}

@@ -3,21 +3,32 @@ h1 {
 }
 
 #container {
-  border: 1px solid black;
-  background-color: white;
+  /* display: flex;
+  justify-content: center; */
   min-width: 800px;
   min-height: 50vh;
   background-image: url('./images/weather.jpg');
   background-size: cover;
+  padding: 0;
+  border-radius: 10px;
 }
 
 #col1 {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 0 20px;
   /* height: 100vh; */
+  margin: 0;
+
 }
 
 #col2 {
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px 0 5px;
+  color: black;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 #row2 {

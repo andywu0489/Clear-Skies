@@ -5,7 +5,7 @@ class Units extends React.Component {
 
   render() {
     return (
-      <button onClick={this.props.unitChange}>°C/°F</button>
+      <button id='unitChange' onClick={this.props.unitChange}>°C/°F</button>
     )
   }
 }

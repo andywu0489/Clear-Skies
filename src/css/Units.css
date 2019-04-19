@@ -1,4 +1,6 @@
-button {
-  margin-top: 25px;
-  
+#unitChange {
+  margin: 10px 0 10px 0;
+  width: 70px;
+  align-self: center;
+  border-radius: 15px;
 }

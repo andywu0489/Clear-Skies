@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/Nav.css'
 
 class Nav extends React.Component {
   render () {
