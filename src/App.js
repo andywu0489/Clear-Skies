@@ -4,6 +4,8 @@ import Form from './components/Form'
 import Weather from './components/Weather'
 import Nav from './components/Nav'
 import Units from './components/Units'
+import { Container, Col, Row } from 'react-bootstrap'
+import './App.css'
 
 const API_KEY = '608536d5ccb2a8806cb642e5c8162189'
 
@@ -80,18 +82,35 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <Nav />
-        <Description />
-        <Form getWeather={this.getWeather}/>
-        <Units unitChange={this.unitChange} />
-        <Weather
-          temperature={this.state.temperature}
-          city={this.state.city}
-          country={this.state.country}
-          humidity={this.state.humidity}
-          description={this.state.description}
-          error={this.state.error}
-        />
+
+
+
+        <Container id='container'>
+          <Row id='row1'>
+            <Nav />
+          </Row>
+          <Row id='row2'>
+            <Col id='col1'>
+              <Description />
+            </Col>
+            <Col id='col2'>
+              <Form getWeather={this.getWeather}/>
+              <Units unitChange={this.unitChange} />
+              <Weather
+                temperature={this.state.temperature}
+                city={this.state.city}
+                country={this.state.country}
+                humidity={this.state.humidity}
+                description={this.state.description}
+                error={this.state.error}
+              />
+            </Col>
+          </Row>
+        </Container>
+
+
+
+
       </div>
     )
   }

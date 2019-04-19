@@ -1,0 +1,9 @@
+#get-weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  margin-top: 25px;
+}
